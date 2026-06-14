@@ -89,7 +89,10 @@ struct Matrix
             newSize.y = pos.y + 1;
         }
 
-        setSize(newSize);
+        if (newSize.x != size.x || newSize.y != size.y)
+        {
+            setSize(newSize);
+        }
     }
 
     void set(Vec2 pos, T value)
