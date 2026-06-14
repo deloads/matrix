@@ -57,7 +57,7 @@ struct Matrix
 
         if (newCapacity.x != capacity.x || newCapacity.y != capacity.y)
         {
-            T* newData = new T[newCapacity.x * newCapacity.y];
+            T* newData = new T[newCapacity.x * newCapacity.y]{};
 
             for (int y = 0; y < size.y; ++y)
             {
